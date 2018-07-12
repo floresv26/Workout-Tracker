@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88FE836FE3EDB560C8016065 /* Pods_Workout_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C552E79912D21EA43E3C4 /* Pods_Workout_TrackerUITests.framework */; };
+		A3994AFE20F6EB1E00AB1614 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3994AFD20F6EB1E00AB1614 /* Exercise.swift */; };
 		A3B4BDD020F6DF3B0015A5E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4BDCF20F6DF3B0015A5E6 /* AppDelegate.swift */; };
 		A3B4BDD220F6DF3B0015A5E6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4BDD120F6DF3B0015A5E6 /* FirstViewController.swift */; };
 		A3B4BDD420F6DF3B0015A5E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B4BDD320F6DF3B0015A5E6 /* SecondViewController.swift */; };
@@ -44,6 +45,7 @@
 		38584B62B55115B4244BD63D /* Pods-Workout Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Tracker/Pods-Workout Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		738CA853ED87AA8A03AEBCB3 /* Pods-Workout TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workout TrackerTests/Pods-Workout TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		74482FF4CB0A40369DABD95A /* Pods_Workout_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3994AFD20F6EB1E00AB1614 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		A3B4BDCC20F6DF3B0015A5E6 /* Workout Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Workout Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B4BDCF20F6DF3B0015A5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3B4BDD120F6DF3B0015A5E6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A3994AFA20F6EADB00AB1614 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3994AFD20F6EB1E00AB1614 /* Exercise.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3994AFB20F6EAE700AB1614 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4BDDA20F6DF3C0015A5E6 /* LaunchScreen.storyboard */,
+				A3B4BDD520F6DF3B0015A5E6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3994AFC20F6EAED00AB1614 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4BDD120F6DF3B0015A5E6 /* FirstViewController.swift */,
+				A3B4BDD320F6DF3B0015A5E6 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		A3B4BDC320F6DF3B0015A5E6 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				A3B4BDCF20F6DF3B0015A5E6 /* AppDelegate.swift */,
-				A3B4BDD120F6DF3B0015A5E6 /* FirstViewController.swift */,
-				A3B4BDD320F6DF3B0015A5E6 /* SecondViewController.swift */,
-				A3B4BDD520F6DF3B0015A5E6 /* Main.storyboard */,
+				A3994AFA20F6EADB00AB1614 /* Model */,
+				A3994AFB20F6EAE700AB1614 /* View */,
+				A3994AFC20F6EAED00AB1614 /* Controller */,
 				A3B4BDD820F6DF3C0015A5E6 /* Assets.xcassets */,
-				A3B4BDDA20F6DF3C0015A5E6 /* LaunchScreen.storyboard */,
 				A3B4BDDD20F6DF3C0015A5E6 /* Info.plist */,
 			);
 			path = "Workout Tracker";
@@ -381,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3B4BDD420F6DF3B0015A5E6 /* SecondViewController.swift in Sources */,
+				A3994AFE20F6EB1E00AB1614 /* Exercise.swift in Sources */,
 				A3B4BDD020F6DF3B0015A5E6 /* AppDelegate.swift in Sources */,
 				A3B4BDD220F6DF3B0015A5E6 /* FirstViewController.swift in Sources */,
 			);

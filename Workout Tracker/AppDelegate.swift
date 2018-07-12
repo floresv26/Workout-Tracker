@@ -17,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+        let exercise = Exercise()
+        exercise.name = "Leg Raises"
+        exercise.reps = 12
+        exercise.weight = 35.0
+        
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(exercise)
+            }
+        } catch  {
+            print("Error initializing new realm, \(error)")
+        }
+        
         return true
     }
 
