@@ -10,18 +10,22 @@ import Foundation
 
 class ExerciseDatabase {
     
-    enum MuscleGroup {
-        case absCore
-        case armsShouldersBack
-        case glutesLegs
-    }
-    
-    enum WorkoutType {
-        case bodyWeight
-        case weightTraining
-        case sportsAndRecreation
-        case cardio
-    }
+//    enum MuscleGroup: String {
+//        case abs = "Abs"
+//        case arms = "Arms"
+//        case back = "Back"
+//        case calves = "Calves"
+//        case chest = "Chest"
+//        case legs = "Glutes & Legs"
+//        case shoulders = "Shoulders"
+//    }
+//    
+//    enum WorkoutType: String {
+//        case bodyWeight = "Body Weight"
+//        case weightTraining = "Weight Training"
+//        case sportsAndRecreation = "Sports & Recreation"
+//        case cardio = "Cardio"
+//    }
     
     var exercisesByWorkoutType : Dictionary<String,Dictionary<String,Array<String>>> = [
         "Body Weight": ["Abs": ["Ab Rollout", "Bicycle Crunch", "Bird Dog", "Bosu Ball Crunch", "Crunches",
