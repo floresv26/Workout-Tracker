@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88FE836FE3EDB560C8016065 /* Pods_Workout_TrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222C552E79912D21EA43E3C4 /* Pods_Workout_TrackerUITests.framework */; };
+		A373A1092111FA3F0086F14A /* color-scheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A373A1082111FA3F0086F14A /* color-scheme.swift */; };
 		A3994AFE20F6EB1E00AB1614 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3994AFD20F6EB1E00AB1614 /* Exercise.swift */; };
 		A3994B0020FBE09100AB1614 /* ExerciseDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3994AFF20FBE09100AB1614 /* ExerciseDatabase.swift */; };
 		A3994B2320FC2B0900AB1614 /* WorkoutDataRows.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3994B2220FC2B0900AB1614 /* WorkoutDataRows.txt */; };
@@ -55,6 +56,7 @@
 		38584B62B55115B4244BD63D /* Pods-Workout Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workout Tracker/Pods-Workout Tracker.release.xcconfig"; sourceTree = "<group>"; };
 		738CA853ED87AA8A03AEBCB3 /* Pods-Workout TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workout TrackerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workout TrackerTests/Pods-Workout TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		74482FF4CB0A40369DABD95A /* Pods_Workout_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Workout_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A373A1082111FA3F0086F14A /* color-scheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "color-scheme.swift"; sourceTree = "<group>"; };
 		A3994AFD20F6EB1E00AB1614 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		A3994AFF20FBE09100AB1614 /* ExerciseDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDatabase.swift; sourceTree = "<group>"; };
 		A3994B0A20FBF76000AB1614 /* GatherData.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GatherData.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +189,7 @@
 				A3B4BDD820F6DF3C0015A5E6 /* Assets.xcassets */,
 				A3B4BDDD20F6DF3C0015A5E6 /* Info.plist */,
 				A3994B2220FC2B0900AB1614 /* WorkoutDataRows.txt */,
+				A373A1082111FA3F0086F14A /* color-scheme.swift */,
 			);
 			path = "Workout Tracker";
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A373A1092111FA3F0086F14A /* color-scheme.swift in Sources */,
 				A3994B2520FFF83C00AB1614 /* QuickAddViewController.swift in Sources */,
 				A3B4BDD420F6DF3B0015A5E6 /* SecondViewController.swift in Sources */,
 				A3994B0020FBE09100AB1614 /* ExerciseDatabase.swift in Sources */,

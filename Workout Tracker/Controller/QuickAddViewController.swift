@@ -36,7 +36,7 @@ class QuickAddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         workoutTypesDictionary = self.exercisesData.exercisesByWorkoutType
-        
+            
     }
     
     func getWorkoutTypes() -> [String] {
