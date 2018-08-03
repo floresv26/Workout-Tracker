@@ -18,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // Status bar to light
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        // Remove shadow from Navigation Bar
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        
+        
         print(Realm.Configuration.defaultConfiguration.fileURL)
         
         let exercise = Exercise()

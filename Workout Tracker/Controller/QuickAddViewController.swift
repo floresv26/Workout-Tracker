@@ -27,7 +27,11 @@ class QuickAddViewController: UIViewController {
         case cardio = "Cardio"
     }
     
+    @IBOutlet weak var workoutTypesMenu: UIView!
+    
+    
     let exercisesData = ExerciseDatabase()
+//    let workoutTypesBar: WorkoutTypesBar = WorkoutTypesBar()
     
     var workoutTypesDictionary = Dictionary<String,Dictionary<String,Array<String>>>()
 
@@ -36,9 +40,19 @@ class QuickAddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         workoutTypesDictionary = self.exercisesData.exercisesByWorkoutType
+     
+        tabBarController?.tabBar.isTranslucent = false
+        
+        // Load workoutTypesMenu View
+        if let wtMenu = Bundle.main.loadNibNamed("MenuTabs", owner: self, options: nil)?.first as! MenuTabs? {
+            workoutTypesMenu.addSubview(wtMenu)
             
+        }
     }
     
+    // MARK: - Get data from ExerciseDatabase.swift
+    
+    // Get the workout types
     func getWorkoutTypes() -> [String] {
         var workoutTypesArray : [String] = []
         for workoutType in workoutTypesDictionary.keys {
@@ -48,6 +62,7 @@ class QuickAddViewController: UIViewController {
         return workoutTypesArray
     }
     
+    // Get the list of muscles or options
     func getMusclesOrOptions(for workoutType: String) -> [String] {
         var musclesOrOptionsArray : [String] = []
         
@@ -60,6 +75,7 @@ class QuickAddViewController: UIViewController {
         return musclesOrOptionsArray
     }
     
+    // Get the list of exercises
     func getExercisesArray(for workoutType: String, for muscleOrOption: String) -> [String] {
         var exercisesArray : [String] = []
         
@@ -68,6 +84,7 @@ class QuickAddViewController: UIViewController {
         return exercisesArray
     }
     
+    // Get the selected exercise
     func getSelectedExercise(in workoutType: String, for muscleOrOption: String, at index: Int) -> String {
         var selectedExercise : String = ""
         
@@ -81,15 +98,9 @@ class QuickAddViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // MARK: - WorkoutTypesBar and Muscles and Options Bar
+    // Set up the WorkoutTypes bar and the muscles and option types bar
+    
+    
 
 }

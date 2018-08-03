@@ -18,68 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="qvv-eI-QGm">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <color key="barTintColor" red="0.023529411760000001" green="0.1529411765" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>Title</string>
-                                    <string>Title</string>
-                                </scopeButtonTitles>
-                            </searchBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="feM-h2-IIa" userLabel="Workout Types Stack">
-                                <rect key="frame" x="0.0" y="56" width="375" height="60"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBJ-FC-uId" userLabel="Body Weight Button">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="60"/>
-                                        <color key="backgroundColor" red="0.023529411760000001" green="0.1529411765" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="body_weight_unselected"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t7K-Y8-ORZ" userLabel="Weightlifting Button">
-                                        <rect key="frame" x="94" y="0.0" width="93.5" height="60"/>
-                                        <color key="backgroundColor" red="0.023529411760000001" green="0.1529411765" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="weight_lifting_unselected"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fzt-fV-Pd2" userLabel="Cardio Button">
-                                        <rect key="frame" x="187.5" y="0.0" width="94" height="60"/>
-                                        <color key="backgroundColor" red="0.023529411760000001" green="0.1529411765" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="cardio_unselected"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKA-UX-COn" userLabel="Sports Button">
-                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="60"/>
-                                        <color key="backgroundColor" red="0.023529411760000001" green="0.1529411765" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" image="sports_rec_unselected"/>
-                                    </button>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zFT-FL-OPQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="fzt-fV-Pd2" firstAttribute="top" secondItem="feM-h2-IIa" secondAttribute="top" id="2be-2O-lrs"/>
-                                    <constraint firstItem="fzt-fV-Pd2" firstAttribute="leading" secondItem="t7K-Y8-ORZ" secondAttribute="trailing" id="3MU-Qj-rzv"/>
-                                    <constraint firstAttribute="bottom" secondItem="PKA-UX-COn" secondAttribute="bottom" id="4Yu-9S-pkN"/>
-                                    <constraint firstItem="t7K-Y8-ORZ" firstAttribute="leading" secondItem="IBJ-FC-uId" secondAttribute="trailing" id="5mU-cw-tev"/>
-                                    <constraint firstAttribute="height" constant="60" id="8yx-EL-mpk"/>
-                                    <constraint firstItem="PKA-UX-COn" firstAttribute="top" secondItem="feM-h2-IIa" secondAttribute="top" id="EEJ-XZ-mif"/>
-                                    <constraint firstItem="t7K-Y8-ORZ" firstAttribute="leading" secondItem="IBJ-FC-uId" secondAttribute="trailing" id="FsU-nj-DQS"/>
-                                    <constraint firstAttribute="bottom" secondItem="t7K-Y8-ORZ" secondAttribute="bottom" id="GE6-Bb-MwP"/>
-                                    <constraint firstItem="PKA-UX-COn" firstAttribute="leading" secondItem="fzt-fV-Pd2" secondAttribute="trailing" id="JNN-55-QEm"/>
-                                    <constraint firstItem="fzt-fV-Pd2" firstAttribute="leading" secondItem="t7K-Y8-ORZ" secondAttribute="trailing" id="Mwh-B0-H8i"/>
-                                    <constraint firstItem="PKA-UX-COn" firstAttribute="leading" secondItem="fzt-fV-Pd2" secondAttribute="trailing" id="N7o-tD-tVN"/>
-                                    <constraint firstAttribute="trailing" secondItem="PKA-UX-COn" secondAttribute="trailing" id="QgO-pw-TTc"/>
-                                    <constraint firstItem="IBJ-FC-uId" firstAttribute="leading" secondItem="feM-h2-IIa" secondAttribute="leading" id="RJm-io-zI4"/>
-                                    <constraint firstAttribute="bottom" secondItem="IBJ-FC-uId" secondAttribute="bottom" id="X4o-ZO-pUg"/>
-                                    <constraint firstItem="t7K-Y8-ORZ" firstAttribute="top" secondItem="feM-h2-IIa" secondAttribute="top" id="sSP-7K-367"/>
-                                    <constraint firstAttribute="bottom" secondItem="fzt-fV-Pd2" secondAttribute="bottom" id="tnO-Q7-EaM"/>
-                                    <constraint firstItem="IBJ-FC-uId" firstAttribute="top" secondItem="feM-h2-IIa" secondAttribute="top" id="zq0-Bn-9x2"/>
+                                    <constraint firstAttribute="height" constant="50" id="OUV-Zg-HvX"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qvv-eI-QGm" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="6DK-wj-xJV"/>
-                            <constraint firstItem="qvv-eI-QGm" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="79G-Te-CgU"/>
-                            <constraint firstItem="feM-h2-IIa" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="ilt-hD-bqH"/>
-                            <constraint firstItem="qvv-eI-QGm" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="lZl-Og-uGp"/>
-                            <constraint firstItem="feM-h2-IIa" firstAttribute="top" secondItem="qvv-eI-QGm" secondAttribute="bottom" id="sZ0-lB-gyZ"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="feM-h2-IIa" secondAttribute="trailing" id="zSC-qq-g6m"/>
+                            <constraint firstItem="zFT-FL-OPQ" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Mpn-GE-rNa"/>
+                            <constraint firstItem="zFT-FL-OPQ" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="f62-1T-oKF"/>
+                            <constraint firstItem="zFT-FL-OPQ" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="mPk-sh-lz7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -88,6 +39,9 @@
                             <color key="tintColor" red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="workoutTypesMenu" destination="zFT-FL-OPQ" id="ag5-zp-hYj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,6 +116,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.023529411764705882" green="0.15294117647058825" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -263,12 +220,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="body_weight_unselected" width="57" height="40"/>
-        <image name="cardio_unselected" width="36" height="40"/>
         <image name="edit-icon" width="24" height="24"/>
         <image name="plan_routine_unselected" width="19" height="23"/>
         <image name="quick_add_selected" width="55" height="31"/>
-        <image name="sports_rec_unselected" width="41" height="40"/>
-        <image name="weight_lifting_unselected" width="37" height="40"/>
     </resources>
 </document>
